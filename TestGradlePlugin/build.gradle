@@ -1,0 +1,25 @@
+apply plugin: 'mt-rn-bundle-download'
+apply plugin: 'java'
+
+//Bundle下载配置信息
+RNDownloadConfig {
+    paths = [
+            'http://s3plus.sankuai.com/v1/xxxx==/rn-bundle-dev/xxx/',
+            'http://s3plus.sankuai.com/v1/xxxx==/rn-bundle-prod/xxx/'
+    ] //远程文件目录
+    version = '99' //远程文件版本
+    fileName = 'xxx.android.bundle-%s.zip' //远程文件的文件名,%s会用上面的version来填充
+    outFile = 'apk/bundle.zip' //下载到本地的保存路径，相对项目根目录
+}
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}

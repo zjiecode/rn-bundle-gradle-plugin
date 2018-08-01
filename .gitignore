@@ -1,0 +1,35 @@
+.gradle
+/build/
+/BuildSrc/out/
+/BuildSrc/build/
+/TestGradlePlugin/src/
+/TestGradlePlugin/out/
+/TestGradlePlugin/build/
+!gradle/wrapper/gradle-wrapper.jar
+TestGradlePlugin/build
+repo
+apk
+.DS_Store
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/

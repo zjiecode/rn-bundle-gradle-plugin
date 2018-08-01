@@ -1,0 +1,27 @@
+apply plugin: 'java-gradle-plugin'
+apply plugin: 'com.novoda.bintray-release'
+
+buildscript {
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.novoda:bintray-release:0.8.1"
+    }
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+//发布bintray配置
+publish {
+    userOrg = 'zjiecode'
+    groupId = "${POM_GROUP_ID}"
+    artifactId = "${POM_ARTIFACT_ID}"
+    publishVersion = "${POM_VERSION_NAME}"
+    desc = '一个用于在安卓打包构建阶段，下载依赖的gradle插件，主要用于下载ReactNative的JsBundle。'
+    website = 'https://github.com/zjiecode/javaweb-api-generate'
+    licences = ['Apache-2.0']
+}
