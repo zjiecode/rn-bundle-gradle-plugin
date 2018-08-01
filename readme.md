@@ -1,7 +1,7 @@
 ## 安卓RN bundle下载插件
 本插件使用IDEA开发，在Android studio上面使用.
 
-###使用方法
+### 使用方法
 
 1、添加依赖
 
@@ -36,7 +36,7 @@ RNDownloadConfig {
 你可以手动运行`RNBundleDownLoad`这个task，或者直接打包，他会在打包之前，自动下载
 
 
-###开发相关
+### 开发相关
 
 1、请使用IDEA开发；
 
