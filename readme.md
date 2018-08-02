@@ -6,7 +6,7 @@
 1、添加依赖
 
 ```groovy
-classpath "com.zjiecode:mt-rn-bundle-download:0.0.2"
+classpath "com.zjiecode:rn-bundle-download:0.0.1"
 ```
 
 2、应用插件
